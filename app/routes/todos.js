@@ -11,9 +11,6 @@ export default Ember.Route.extend({
 				isCompleted: false
 			});
 
-			// clears 'newTitle' value in controller
-			this.controllerFor('todos').set('newTitle', '');
-			
 			// saves newly created model todo (returned from createRecord())
 			todo.save();
 		},
