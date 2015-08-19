@@ -2,14 +2,11 @@
  value=newTitle action="createTodo" }}
 
 <section id="main">
-	<ul id="todo-list">
-		{{#each model as |todo|}}
-			{{todo-item deleteTodo="deleteTodo" acceptChanges="acceptChanges" todo=todo}}
-		{{/each}}
-	</ul>	
+	{{outlet}}
 	
 	<input type="checkbox" id="toggle-all" />
 </section>
+
 <footer id="footer">
 	<span id="todo-count">
 		<strong>2</strong> todos left
